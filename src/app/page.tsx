@@ -11,6 +11,8 @@ export const dynamic = "force-dynamic";
 
 // const mockImages = mockUrls.map((url, index) => ({ id: index + 1, url }));
 
+console.log("hello");
+
 export default async function HomePage() {
   const images = await db.query.images.findMany({
     orderBy: (fields, { desc }) => desc(fields.id),
